@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Djeziri Adel | Developer Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="logo">
+      <h1><span>D</span>jeziriAdel</h1>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-links" id="nav-links">
+      <ul>
+        <li><a href="#about"><i class="fa-solid fa-user-astronaut"></i> About</a></li>
+        <li><a href="#skills"><i class="fa-solid fa-terminal"></i> Skills</a></li>
+        <li><a href="#projects"><i class="fa-solid fa-layer-group"></i> Projects</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- === HERO SECTION === -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm <span>Adel Djeziri</span></h2>
+      <p>Full-Stack & Mobile Developer | Cybersecurity & AI Enthusiast</p>
+      <a href="files/DjeziriAdel_CV.pdf" class="btn" download>
+        <i class="fa-solid far fas fas fas fa-arrow-down"></i> Download CV
+      </a>
+          </div>
+
+    <div class="hero-photo">
+      <img src="images/dz.png" alt="Adel Djeziri photo">
+    </div>
+  </section>
+
+  <script>
+    // Toggle menu visibility
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuToggle.classList.toggle('open');
+
+      // Change icon
+      const icon = menuToggle.querySelector('i');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-xmark');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+/* === GLOBAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+/* === HEADER === */
+header.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 70px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(10,10,10,0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* LOGO */
+.logo h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.logo span { color: #e50914; }
+
+/* NAV LINKS */
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-links ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #e50914;
+  transition: width 0.3s ease;
+}
+
+.nav-links ul li a:hover::after { width: 100%; }
+.nav-links ul li a:hover,
+.nav-links ul li a:hover i { color: #e50914; }
+
+/* === HAMBURGER ICON === */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+.menu-toggle.open {
+  color: #e50914;
+}
+
+/* === HERO SECTION === */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 140px 60px 80px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 550px;
+  animation: fadeIn 1.2s ease;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.hero h2 span { color: #e50914; }
+
+.hero p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 35px;
+}
+
+.btn {
+  background-color: #e50914;
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.btn:hover {
+  background-color: #ff1a1a;
+  transform: scale(1.05);
+}
+
+/* === HERO PHOTO === */
+.hero-photo img {
+  width: 340px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50% 50% 12px 12px / 45% 45% 10px 10px;
+  background-color: #0a0a0a;
+  box-shadow: 0 0 35px rgba(229, 9, 20, 0.3);
+  transition: all 0.4s ease;
+}
+.hero-photo img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 55px rgba(229, 9, 20, 0.5);
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  header.topbar {
+    padding: 20px 30px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 220px;
+    height: auto;
+    background: rgba(10,10,10,0.95);
+    backdrop-filter: blur(10px);
+    transition: right 0.3s ease;
+    border-left: 2px solid #e50914;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .nav-links.active {
+    right: 20px;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .nav-links ul li a {
+    font-size: 1.1rem;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 120px 20px 60px;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-photo img {
+    width: 220px;
+  }
+}
