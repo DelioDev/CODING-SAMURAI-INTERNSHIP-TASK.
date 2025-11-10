@@ -30,20 +30,22 @@
         <!-- Navigation -->
         <nav class="nav-links" id="nav-links">
             <ul>
+                <li><a href="#home"><i class="fa-solid fas fa-home"></i> Home</a></li>
                 <li><a href="#about"><i class="fa-solid fa-user-astronaut"></i> About</a></li>
-                <li><a href="#skills"><i class="fa-solid fa-terminal"></i> Skills</a></li>
+                <li><a href="#skills"><i class="fa-solid fas fa-code"></i> Skills</a></li>
+                <li><a href="#education"><i class="fa-solid fas fa-book"></i> Education</a></li>
                 <li><a href="#projects"><i class="fa-solid fa-layer-group"></i> Projects</a></li>
                 <li><a href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- === HERO SECTION === -->
-    <section class="hero">
+    <!-- HERO SECTION  -->
+    <section id="home" class="hero">
         <div class="hero-content">
             <h2>Hello, I'm <span>Adel Djeziri</span></h2>
             <p>Full-Stack & Mobile Developer | Cybersecurity & AI Enthusiast</p>
-            <a href="files/DjeziriAdel_CV.pdf" class="btn" download>
+            <a href="files/DjeziriAdel.pdf" class="btn" download>
                 <i class="fa-solid far fas fas fas fa-arrow-down"></i> Download CV
             </a>
         </div>
@@ -52,8 +54,35 @@
             <img src="images/dz.png" alt="Adel Djeziri photo">
         </div>
     </section>
+    <section id="about" class="about-section">
+        <div class="about-container">
+          <div class="about-image">
+            <img src="images/images/avatar.png" alt="Adel Djeziri">
+          </div>
+      
+          <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+              Hello! I'm <span>Adel Djeziri</span>, a passionate <strong>Full-Stack & Mobile Developer</strong> 
+              with a Master’s degree in <strong>Cybersecurity and Artificial Intelligence</strong>.  
+              I love creating modern, user-friendly web and mobile apps that make a real impact.
+            </p>
+            <p>
+              With over <strong>5 years of programming experience</strong>, I’ve worked across multiple domains — 
+              from web and mobile to AI-driven systems.  
+              I’m detail-oriented, fast-learning, and always ready to take on new challenges.
+            </p>
+            <p>
+              Currently, I’m enhancing my portfolio and working on innovative projects to expand 
+              my knowledge in UI/UX and product design.
+            </p>
+      
+            <a href="#contact" class="btn">Let's Connect</a>
+          </div>
+        </div>
+      </section>
+      
     <section class="Skills">
-        <h2>My Skills</h2>
         <section id="skills" class="skills-section">
             <h2 class="section-title">💼 Skills</h2>
 
@@ -111,131 +140,220 @@
 
             </div>
         </section>
+        <section id="education" class="education-section">
+            <h2 class="section-title">Education</h2>
 
+            <div class="timeline">
+                <!-- Education 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">🎓</div>
+                    <div class="timeline-content">
+                        <h3>Master’s Degree in Cybersecurity & AI</h3>
+                        <p class="school">University of Ain Témouchent, Algeria</p>
+                        <p class="year">2022 – 2024</p>
+                        <p class="details">
+                            Focused on advanced cybersecurity, deep learning, and AI-driven solutions.
+                            Completed research projects integrating machine learning models for threat detection.
+                        </p>
+                    </div>
+                </div>
 
-    </section>
-    <section id="projects" class="projects-section">
-        <h2 class="section-title">🚀 Projects</h2>
+                <!-- Education 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">🎓</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor’s Degree in Computer Systems</h3>
+                        <p class="school">University of Ain Témouchent, Algeria</p>
+                        <p class="year">2019 – 2022</p>
+                        <p class="details">
+                            Studied computer systems, software engineering, and network management.
+                            Participated in academic clubs and completed several practical development projects.
+                        </p>
+                    </div>
+                </div>
 
-        <div class="projects-container">
-
-            <!-- Project 1 -->
-            <div class="project-card">
-                <img src="images/images//Adel.png" alt="Doctor Appointment App">
-                <div class="project-content">
-                    <h3>Doctor Appointment App</h3>
-                    <p>A mobile app built with Flutter and Laravel API for booking doctor appointments easily with
-                        authentication and scheduling features.</p>
-                    <p class="tech-stack">Tech Stack: Flutter, Laravel, MySQL</p>
-                    <div class="project-links">
-                        <a href="https://github.com/090320004246adeldjeziri/doctor_appointment" target="_blank"
-                            class="btn">View Code</a>
+                <!-- Education 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">📘</div>
+                    <div class="timeline-content">
+                        <h3>Certificate: Fundamentals of Deep Learning</h3>
+                        <p class="school">University of Sidi Belabbes, Algeria</p>
+                        <p class="year">2023</p>
+                        <p class="details">
+                            Learned the fundamentals of designing and training neural networks using modern AI tools.
+                            Focused on practical applications in computer vision and data processing.
+                        </p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="images/images/siahaty.png" alt="Siahaty Reservation">
-                <div class="project-content">
-                    <h3>Siahaty Reservation</h3>
-                    <p>A web platform for hotel and room reservations with an elegant UI, built using Laravel and
-                        Angular.</p>
-                    <p class="tech-stack">Tech Stack: Angular, Laravel, Firebase</p>
-                    <div class="project-links">
-                        <a href="https://github.com/090320004246adeldjeziri/Siahaty_Reservation" target="_blank"
-                            class="btn">View Code</a>
+
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">🚀 Projects</h2>
+
+            <div class="projects-container">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="images/images//Adel.png" alt="Doctor Appointment App">
+                    <div class="project-content">
+                        <h3>Doctor Appointment App</h3>
+                        <p>A mobile app built with Flutter and Laravel API for booking doctor appointments easily with
+                            authentication and scheduling features.</p>
+                        <p class="tech-stack">Tech Stack: Flutter, Laravel, MySQL</p>
+                        <div class="project-links">
+                            <a href="https://github.com/090320004246adeldjeziri/doctor_appointment" target="_blank"
+                                class="btn">View Code</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="images/images/dawa_background.png" alt="Medi - Medicament App">
-                <div class="project-content">
-                    <h3>Medi - Medicament in the Hand</h3>
-                    <p>An app to find medications available in nearby pharmacies with a smart search system and
-                        real-time updates.</p>
-                    <p class="tech-stack">Tech Stack: Flutter, Firebase</p>
-                    <div class="project-links">
-                        <a href="https://github.com/090320004246adeldjeziri/medicament_in_hand" target="_blank"
-                            class="btn">View Code</a>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="images/images/siahaty.png" alt="Siahaty Reservation">
+                    <div class="project-content">
+                        <h3>Siahaty Reservation</h3>
+                        <p>A web platform for hotel and room reservations with an elegant UI, built using Laravel and
+                            Angular.</p>
+                        <p class="tech-stack">Tech Stack: Flutter, Firebase</p>
+                        <div class="project-links">
+                            <a href="https://github.com/090320004246adeldjeziri/Siahaty_Reservation" target="_blank"
+                                class="btn">View Code</a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="images/images/dawa_background.png" alt="Medi - Medicament App">
+                    <div class="project-content">
+                        <h3>Medi - Medicament in the Hand</h3>
+                        <p>An app to find medications available in nearby pharmacies with a smart search system and
+                            real-time updates.</p>
+                        <p class="tech-stack">Tech Stack: Flutter, Firebase</p>
+                        <div class="project-links">
+                            <a href="https://github.com/090320004246adeldjeziri/medicament_in_hand" target="_blank"
+                                class="btn">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="images/images/portfolio.png" alt="Adel Djeziri Portfolio App">
+                    <div class="project-content">
+                        <h3>My Portfolio App</h3>
+                        <p>A responsive personal portfolio built entirely with Flutter Web. It presents my projects,
+                            skills,
+                            and background with a smooth UI, custom animations, and local asset integration — hosted on
+                            Netlify for fast and reliable access.</p>
+                        <p class="tech-stack">Tech Stack: Flutter, Dart, Netlify Hosting</p>
+                        <div class="project-links">
+                            <a href="https://github.com/090320004246adeldjeziri/portfolio_flutter" target="_blank"
+                                class="btn">View Code</a>
+                            <a href="https://portfolio-adeldjeziri.netlify.app/" target="_blank" class="btn">Live
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <img src="images/images/xoxo.png" alt="XO Game Web App">
+                    <div class="project-content">
+                        <h3>XO Game Web</h3>
+                        <p>An interactive and responsive Tic Tac Toe game built using React. It offers smooth gameplay,
+                            modern UI, and real-time updates — a fun demonstration of front-end logic and clean design.
+                        </p>
+                        <p class="tech-stack">Tech Stack: React, JavaScript, Vercel Hosting</p>
+                        <div class="project-links">
+                            <a href="https://github.com/DelioDev/TicTacTaoGame" target="_blank" class="btn">View
+                                Code</a>
+                            <a href="https://tic-tac-tao-game-blond.vercel.app/" target="_blank" class="btn">Play
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">📩 Contact Me</h2>
+            <p class="contact-intro">Let’s work together or talk about your next project. I’m always open to
+                collaborations
+                and new ideas.</p>
 
-        </div>
-    </section>
-    <section id="contact" class="contact-section">
-        <h2 class="section-title">📩 Contact Me</h2>
-        <p class="contact-intro">Let’s work together or talk about your next project. I’m always open to collaborations
-            and new ideas.</p>
+            <div class="contact-container">
 
-        <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p><i class="fas fa-envelope"></i> <a
+                            href="mailto:adeldjeziri.42.46@gmail.com">adeldjeziri.42.46@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> +213-675-97-92-16</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ain Temouchent, Algeria</p>
 
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <h3>Get In Touch</h3>
-                <p><i class="fas fa-envelope"></i> <a
-                        href="mailto:adeldjeziri.dev@gmail.com">adeldjeziri.dev@gmail.com</a></p>
-                <p><i class="fas fa-phone"></i> +213-675979216</p>
-                <p><i class="fas fa-map-marker-alt"></i> Ain Temouchent, Algeria</p>
+                    <div class="social-links">
+                        <a href="https://github.com/090320004246adeldjeziri" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/adeldjeziri" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
 
-                <div class="social-links">
-                    <a href="https://github.com/090320004246adeldjeziri" target="_blank"><i
-                            class="fab fa-github"></i></a>
+                <!-- Contact Form -->
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <h2>Adel Djeziri</h2>
+                    <p>Mobile & Web Developer | AI Enthusiast</p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer-social">
+                    <a href="https://github.com/DelioDev" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://linkedin.com/in/adeldjeziri" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/adeldeliodev/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
                 </div>
             </div>
 
-            <!-- Contact Form -->
-            <form class="contact-form" action="#" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+            <div class="footer-bottom">
+                <p>© 2025 <span>Adel Djeziri</span>. All Rights Reserved.</p>
+            </div>
+        </footer>
 
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer-container">
-      
-          <!-- Brand -->
-          <div class="footer-brand">
-            <h2>Adel Djeziri</h2>
-            <p>Mobile & Web Developer | AI Enthusiast</p>
-          </div>
-      
-          <!-- Navigation Links -->
-          <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </div>
-      
-          <!-- Social Links -->
-          <div class="footer-social">
-            <a href="https://github.com/090320004246adeldjeziri" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/adeldjeziri" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      
-        <div class="footer-bottom">
-          <p>© 2025 <span>Adel Djeziri</span>. All Rights Reserved.</p>
-        </div>
-      </footer>
-      
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 
 </body>
 
