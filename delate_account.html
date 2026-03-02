@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiaSmart+ | حذف الحساب</title>
+    <style>
+        :root {
+            --danger: #e74c3c;
+            --dark: #2c3e50;
+            --light: #f4f7f6;
+            --success: #2ecc71;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        h1 {
+            color: var(--danger);
+        }
+
+        .info-box {
+            background: #fff3f3;
+            border-right: 5px solid var(--danger);
+            padding: 15px;
+            margin: 20px 0;
+            text-align: right;
+        }
+
+        .btn-mail {
+            display: inline-block;
+            background: var(--dark);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        /* Modal Style (Centered Alert) */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 400px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content h2 {
+            color: var(--success);
+            margin-top: 0;
+        }
+
+        .close-btn {
+            background: var(--success);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div style="font-size: 2rem; font-weight: bold; color: #2ecc71; margin-bottom: 10px;">DiaSmart+</div>
+        <h1>طلب حذف الحساب والبيانات</h1>
+        <p>نحن نحترم خصوصيتك. يمكنك طلب حذف حسابك وبياناتك الصحية نهائياً من هنا.</p>
+
+        <div class="info-box">
+            <strong>تنبيه هائل:</strong>
+            <ul>
+                <li>سيتم حذف جميع سجلات السكري والقياسات.</li>
+                <li>هذا الإجراء لا يمكن التراجع عنه.</li>
+            </ul>
+        </div>
+
+        <button onclick="handleDeleteRequest()" class="btn-mail">
+            إرسال طلب الحذف الآن
+        </button>
+
+        <p style="margin-top: 20px; font-size: 0.9rem;">أو تواصل معنا مباشرة على: <br><strong>adel.djeziri.42.46@gmail.com</strong></p>
+        </p>
+    </div>
+
+    <div id="customModal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>✓ تم الإرسال</h2>
+            <p>لقد تم إرسال طلبك بنجاح.</p>
+            <p>Your demand is sent successfully.</p>
+            <button class="close-btn" onclick="closeModal()">إغلاق / Close</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 DiaSmart+ - سياسة البيانات
+    </footer>
+
+    <script>
+        function handleDeleteRequest() {
+            // 1. Open the email client
+            const email = "your-email@example.com";
+            const subject = "Request Account Deletion - DiaSmart+";
+            const body = "I would like to delete my DiaSmart+ account and all associated data.";
+            window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            // 2. Show the centered custom alert
+            document.getElementById('customModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('customModal').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
