@@ -89,6 +89,18 @@ export const portfolioData = {
   ],
   projects: [
     {
+      title: 'Tabkh Eddar',
+      titleArabic: 'طبخ الدار',
+      description:
+        'A bilingual marketplace where customers order home-cooked dishes with cash on delivery. Chefs manage dishes and preparation progress, drivers claim ready orders and confirm delivery, and admins review chef and driver applications.',
+      technologies: 'React, TypeScript, Vite, Node.js, Express, PostgreSQL, Vercel, Render',
+      links: [
+        { label: 'Live Website', href: 'https://tabkh-manzily.vercel.app/' },
+        { label: 'Backend API', href: 'https://tabkhmanzily-1.onrender.com/' },
+        { label: 'Source Code', href: 'https://github.com/DelioDev/tabkhManzily' },
+      ],
+    },
+    {
       image: 'images/images/Adel.png',
       imageAlt: 'Doctor Appointment App',
       title: 'Doctor Appointment App',
