@@ -1,14 +1,4 @@
 
-    // Toggle menu visibility
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
+// Legacy entry point retained for compatibility.
+// The active UI logic now lives in src/presentation/index-page.js.
 
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      menuToggle.classList.toggle('open');
-
-      // Change icon
-      const icon = menuToggle.querySelector('i');
-      icon.classList.toggle('fa-bars');
-      icon.classList.toggle('fa-xmark');
-    });
