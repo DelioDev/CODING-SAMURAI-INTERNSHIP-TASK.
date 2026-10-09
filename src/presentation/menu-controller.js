@@ -9,6 +9,9 @@ export function bindMenuToggle() {
   menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     menuToggle.classList.toggle('open');
+    const isExpanded = navLinks.classList.contains('active');
+    menuToggle.setAttribute('aria-expanded', String(isExpanded));
+    menuToggle.setAttribute('aria-label', isExpanded ? 'Close navigation' : 'Open navigation');
 
     const icon = menuToggle.querySelector('i');
     if (icon) {

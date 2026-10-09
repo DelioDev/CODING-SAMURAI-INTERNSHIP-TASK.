@@ -12,3 +12,14 @@ export function getPortfolioNavigation() {
 export function getPortfolioSocialLinks() {
   return getPortfolioProfile().socials;
 }
+
+export function getPortfolioPageData() {
+  return {
+    profile: getPortfolioProfile(),
+    skills: portfolioData.skills,
+    education: portfolioData.education,
+    projects: portfolioData.projects,
+    footerSocials: portfolioData.footerSocials,
+    footerLinks: portfolioData.footerLinks,
+  };
+}

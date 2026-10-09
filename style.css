@@ -84,6 +84,9 @@ header.topbar {
   cursor: pointer;
   color: white;
   transition: color 0.3s ease;
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 .menu-toggle.open {
